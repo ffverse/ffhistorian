@@ -29,17 +29,19 @@ The main workflow involves three steps:
 3.  **Analyze and visualize** the results
 
 ### Basic Example
-```{r}
+```{r, message = FALSE, warning = FALSE}
 library(ffhistorian)
 
-# Connect to a Sleeper league
-conn <- ffscrapr::sleeper_connect(2025, "1203144309361090560")
-
-# Pull league history
-ff_history <- ff_history(conn)
-
-# View summary statistics
-summary(ff_history)
+conn <- ffscrapr::sleeper_connect(2025, "1248319500349087744")
+history <- ff_history(conn)
+```
+```{r, eval = TRUE, echo = FALSE, message = FALSE}
+# Save summary table as image
+summary_table <- summary(history)
+gt::gtsave(summary_table, "man/figures/summary_example.png")
+```
+```{r, echo = FALSE, out.width = "100%"}
+knitr::include_graphics("man/figures/summary_example.png")
 ```
 
 ### Supported Platforms
