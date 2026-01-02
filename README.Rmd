@@ -29,8 +29,7 @@ The main workflow involves three steps:
 3.  **Analyze and visualize** the results
 
 ### Basic Example
-
-``` r
+```{r}
 library(ffhistorian)
 
 # Connect to a Sleeper league
