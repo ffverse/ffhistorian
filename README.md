@@ -1,9 +1,9 @@
 
-# ffhistory
+# ffhistorian
 
 ## Overview
 
-`ffhistory` is an R package that retrieves and visualizes fantasy
+`ffhistorian` is an R package that retrieves and visualizes fantasy
 football league history data. Built on top of the excellent
 [ffscrapr](https://github.com/ffverse/ffscrapr) package, it provides
 tools to analyze league performance across seasons, track user
@@ -12,14 +12,14 @@ football league’s history.
 
 ## Installation
 
-You can install the development version of `ffhistory` from GitHub:
+You can install the development version of `ffhistorian` from GitHub:
 
 ``` r
 # pak is recommended, see https://github.com/r-lib/pak
-pak::pak("ffverse/ffhistory")
+pak::pak("ffverse/ffhistorian")
 
 # can also use remotes
-remotes::install_github("ffverse/ffhistory")
+remotes::install_github("ffverse/ffhistorian")
 ```
 
 ## Getting Started
@@ -33,7 +33,7 @@ The main workflow involves three steps:
 ### Basic Example
 
 ``` r
-library(ffhistory)
+library(ffhistorian)
 
 # Connect to a Sleeper league
 conn <- ffscrapr::sleeper_connect(2025, "1203144309361090560")
@@ -47,7 +47,7 @@ summary(ff_history)
 
 ### Supported Platforms
 
-`ffhistory` supports all platforms available through `ffscrapr`:
+`ffhistorian` supports all platforms available through `ffscrapr`:
 
 - **Sleeper**
 - **ESPN** (requires authentication)
@@ -86,7 +86,7 @@ The best places to get help on this package are:
 - the [nflverse discord](https://discord.com/invite/5Er2FBnnQa) (for
   both this package as well as anything R/NFL related)
 - opening [an
-  issue](https://github.com/ffverse/ffhistory/issues/new/choose)
+  issue](https://github.com/ffverse/ffhistorian/issues/new/choose)
 
 ### Terms of Use
 
