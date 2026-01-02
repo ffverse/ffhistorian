@@ -17,7 +17,7 @@
 #' @examples
 #' \donttest{
 #' try({ # try block to prevent CRAN-related issues
-#'   conn <- ffscrapr::sleeper_connect(2025, "1203144309361090560")
+#'   conn <- ffscrapr::sleeper_connect(2025, "1200503479357952000")
 #'   ff_history_obj <- ff_history(conn)
 #'   summary(ff_history_obj)
 #' })

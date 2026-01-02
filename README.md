@@ -35,7 +35,7 @@ The main workflow involves three steps:
 ``` r
 library(ffhistorian)
 
-conn <- ffscrapr::sleeper_connect(2025, "1248319500349087744")
+conn <- ffscrapr::sleeper_connect(2025, "1200503479357952000")
 history <- ff_history(conn)
 ```
 

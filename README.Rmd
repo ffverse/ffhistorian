@@ -32,13 +32,16 @@ The main workflow involves three steps:
 ```{r, message = FALSE, warning = FALSE}
 library(ffhistorian)
 
-conn <- ffscrapr::sleeper_connect(2025, "1248319500349087744")
+conn <- ffscrapr::sleeper_connect(2025, "1200503479357952000")
 history <- ff_history(conn)
 ```
 ```{r, eval = TRUE, echo = FALSE, message = FALSE}
 # Save summary table as image
 summary_table <- summary(history)
-gt::gtsave(summary_table, "man/figures/summary_example.png")
+gt::gtsave(summary_table, "man/figures/summary_example.png", 
+           expand = 15,
+           vwidth = 30000,
+           vheight = 2000)
 ```
 ```{r, echo = FALSE, out.width = "100%"}
 knitr::include_graphics("man/figures/summary_example.png")

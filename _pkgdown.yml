@@ -1,0 +1,78 @@
+url: https://ffhistorian.ffverse.com
+destination: docs
+
+reference:
+- title: Main
+  desc: This is the primary function of `ffhistorian`
+  contents:
+  - starts_with("ff_")
+- title: Miscellaneous
+  desc: Additional helper functions
+  contents:
+  - starts_with("get")
+  - starts_with("summary")
+  - starts_with("combine")
+  - starts_with("league")
+
+home:
+  title: ffhistorian • an R package for Fantasy Football League Histories
+  description: >
+    An R package that helps retrieve and visualizes fantasy football league
+    history data
+
+navbar:
+  bg: dark
+  type: dark
+  structure:
+    left:  [home, reference, articles, news]
+    right: [discord,  github, more]
+  components:
+    discord:
+      icon: "fab fa-discord fa-lg"
+      href: https://discord.com/invite/5Er2FBnnQa
+    more:
+      text: "More"
+      menu:
+        - text: ffverse
+        - text: ffverse.com
+          href: https://www.ffverse.com
+        - text: ffsimulator
+          href: https://ffsimulator.ffverse.com
+        - text: ffpros
+          href: https://ffpros.ffverse.com
+        - text: ffverse GitHub
+          href: https://www.github.com/ffverse
+        - text: ------
+        - text: "nflverse"
+        - text: nflfastR package
+          href: https://www.nflfastr.com
+        - text: nflverse GitHub
+          href: https://github.com/nflverse
+        - text: ------
+        - text: "DynastyProcess"
+        - text: "DynastyProcess.com"
+          href: https://dynastyprocess.com
+        - text: DynastyProcess GitHub
+          href: https://github.com/dynastyprocess
+
+authors:
+  Joe Sydlowski:
+    href: https://twitter.com/JoeSydlowskiFF
+  Tan Ho:
+    href: https://twitter.com/_TanHo
+
+template:
+  bootstrap: 5
+  params:
+    bootswatch: zephyr
+    docsearch:
+      api_key: 7abddd2aa591d955b365235f35d75a38
+      index_name: dynastyprocess
+  opengraph:
+    image:
+      src: man/figures/logo.svg
+      alt: "ffhistorian - an R package for Fantasy Football League Histories"
+    twitter:
+      creator: "@JoeSydlowskiFF"
+      site: "@DynastyProcess"
+      card: summary
